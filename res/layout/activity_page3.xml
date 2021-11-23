@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page3bg2"
+
+    tools:context=".Page3">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerImageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="220dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+
+        android:backgroundTint="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="110dp"
+        android:fontFamily="serif-monospace"
+        android:text="RESORT'vation"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="380dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Urdaneta Resorts"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:width="330dp"
+        android:fontFamily="sans-serif-light"
+        android:text="A resort is a place used for vacation, relaxation or as a daytime getaway. While this can be a single structure such as a hotel, it also can be a whole island or a ship at sea. One of the most looked-for aspects of a resort is that visitors are freed from most daily errands, which are typically taken care of by the facility’s staff. Numerous activities are usually presented at resorts, as well as massages, meals, live entertainment and cosmetic treatments."
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView3"-->
+    <!--        android:layout_width="110dp"-->
+    <!--        android:layout_height="110dp"-->
+    <!--        android:layout_marginLeft="10dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:src="@drawable/lislandpic"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+
+    <!--        app:layout_constraintHorizontal_bias="0.083"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.237"-->
+    <!--        tools:ignore="MissingConstraints" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView4"-->
+    <!--        android:layout_width="110dp"-->
+    <!--        android:layout_height="110dp"-->
+    <!--        android:layout_marginLeft="5dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:src="@drawable/urdanetagardenpic"-->
+
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+
+    <!--        app:layout_constraintStart_toEndOf="@+id/imageView3"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.237"-->
+    <!--        tools:ignore="MissingConstraints" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView5"-->
+    <!--        android:layout_width="110dp"-->
+    <!--        android:layout_height="110dp"-->
+    <!--        android:layout_marginLeft="5dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:src="@drawable/springlandpic"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/imageView4"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.237"-->
+    <!--        tools:ignore="MissingConstraints" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView6"-->
+    <!--        android:layout_width="110dp"-->
+    <!--        android:layout_height="110dp"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:src="@drawable/aljenpic"-->
+    <!--        android:layout_marginLeft="25dp"-->
+
+    <!--        app:layout_constraintBottom_toTopOf="@id/textView4"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.099"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/imageView3"-->
+
+    <!--        tools:ignore="MissingConstraints" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView7"-->
+    <!--        android:layout_width="130dp"-->
+    <!--        android:layout_height="130dp"-->
+    <!--        android:src="@drawable/goldlandpic"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/textView4"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.254"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/imageView6"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/imageView5"-->
+    <!--        app:layout_constraintVertical_bias="0.0" />-->
+
+    <Button
+        android:id="@+id/logoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Logout"
+        android:textColor="#fff"
+        android:backgroundTint="#92C4EE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

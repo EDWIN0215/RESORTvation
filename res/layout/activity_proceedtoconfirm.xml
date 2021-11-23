@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Proceedtoconfirm">
+
+
+    <ImageView
+        android:id="@+id/imageViewbg"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/page3bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:alpha="0.3"
+        />
+
+    <ImageView
+        android:id="@+id/whitebox"
+        android:layout_width="330dp"
+        android:layout_height="690dp"
+        android:src="@drawable/reservationstyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profilepictwo"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editfullname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColorHint="#fff"
+        android:layout_marginTop="140dp"
+        android:inputType="textPersonName"
+        android:hint="Full Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editemail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:textColorHint="#fff"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/editfullname"
+        app:layout_constraintStart_toStartOf="@+id/editfullname"
+        app:layout_constraintTop_toBottomOf="@+id/editfullname" />
+
+    <EditText
+        android:id="@+id/editphonenumber"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Phone number"
+        android:textColorHint="#fff"
+        android:inputType="textPhonetic"
+        app:layout_constraintEnd_toEndOf="@+id/editemail"
+
+        app:layout_constraintStart_toStartOf="@+id/editemail"
+        app:layout_constraintTop_toBottomOf="@+id/editemail" />
+
+    <Button
+        android:id="@+id/btndetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#92C4EE"
+        android:text="reservation details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editphonenumber" />
+
+    <Button
+        android:id="@+id/logoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="200dp"
+        android:text="Logout"
+        android:backgroundTint="#92C4EE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btndetails" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
